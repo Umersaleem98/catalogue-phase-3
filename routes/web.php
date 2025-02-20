@@ -42,18 +42,7 @@ use App\Http\Controllers\Dashboard\Fund_Project\DashboardFundaProjectBusinessCen
 use App\Http\Controllers\Dashboard\Endewment\CustomEndowmentOneyearDashboardController;
 use App\Http\Controllers\Dashboard\Endewment\DefultEndowmentOneyearDashboardController;
 
-// Route::get('/', function () {
-//     // $teams = Team::all();
 
-//     $events = Event::orderBy('date', 'asc')->get()->map(function ($event) {
-//         $event->formatted_day = Carbon::parse($event->date)->format('d');
-//         $event->formatted_month = Carbon::parse($event->date)->format('M');
-//         $event->formatted_year = Carbon::parse($event->date)->format('Y');
-//         return $event;
-//     });
-
-//     return view('index', compact('events'));
-// });
 
 Route::get('/', [HomeController::class, 'index']);
 
